@@ -13,13 +13,13 @@ const Navbar = () => {
       <img src="/logo.png" alt="" className="w-[40vw] lg:w-[14vw]" />
       {/* Desktop Nav Links */}
       <div className="hidden lg:flex items-center gap-18 text-white font-light">
-        <a href="#" className="hover:text-[#5A6CDE] hover:cursor-pointer">
+        <a href="#about" className="hover:text-[#5A6CDE] hover:cursor-pointer">
           About
         </a>
         <a href="#" className="hover:text-[#5A6CDE] hover:cursor-pointer">
           Contact
         </a>
-        <a href="#" className="hover:text-[#5A6CDE] hover:cursor-pointer">
+        <a href="#faq" className="hover:text-[#5A6CDE] hover:cursor-pointer">
           FAQ
         </a>
       </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
         </div>
         <ul className="flex flex-col gap-6 mt-20 font-light text-xl">
           <li className="border-b pb-2">
-            <a href="#" className="hover:text-[#5A6CDE]" onClick={toggleMenu}>
+            <a href="#about" className="hover:text-[#5A6CDE]" onClick={toggleMenu}>
               About
             </a>
           </li>
@@ -62,7 +62,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className="border-b pb-2">
-            <a href="#" className="hover:text-[#5A6CDE]" onClick={toggleMenu}>
+            <a href="#faq" className="hover:text-[#5A6CDE]" onClick={toggleMenu}>
               FAQ
             </a>
           </li>

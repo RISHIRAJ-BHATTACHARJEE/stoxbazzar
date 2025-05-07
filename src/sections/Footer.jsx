@@ -25,9 +25,9 @@ const Footer = () => {
         </div>
 
         <ul className="text-zinc-400 flex flex-col gap-3">
-          <li>About</li>
-          <li>Contact</li>
-          <li>FAQ</li>
+          <a href="#about">About</a>
+          <a href="#">Contact</a>
+          <a href="#faq">FAQ</a>
         </ul>
 
         <p className="text-sm text-zinc-400">
@@ -62,9 +62,9 @@ const Footer = () => {
           </p>
         </div>
         <ul className="text-zinc-400 lg:text-sm flex gap-8 text-lg">
-          <li>About</li>
-          <li>Contact</li>
-          <li>FAQ</li>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#faq">FAQ</a>
         </ul>
       </div>
     </div>

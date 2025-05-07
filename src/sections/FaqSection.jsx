@@ -21,7 +21,7 @@ const faqHelpText = (
 
 const FaqSection = () => {
   return (
-    <section className="text-black flex flex-col lg:flex-row items-center justify-between lg:justify-evenly p-8 gap-10 lg:h-[150vh] xl:h-[140vh] xl:-mt-[16vw]">
+    <section id="faq" className="text-black flex flex-col lg:flex-row items-center justify-between lg:justify-evenly p-8 gap-10 lg:h-[150vh] xl:h-[140vh] xl:-mt-[16vw]">
       {/* Left Section: Header & Illustration */}
       <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6 lg:max-w-xl">
         <h2 className="font-semibold text-[9vw] lg:text-[3vw]">

@@ -2,7 +2,7 @@ import React from "react";
 
 const GetStartedSection = () => {
   return (
-    <section className="flex max-w-[100vw] flex-col lg:flex-row items-center justify-between bg-gradient-to-b from-[#090A1C] to-[#05330E] px-6 py-12 lg:px-36 lg:py-30 gap-8">
+    <section id="about" className="flex max-w-[100vw] flex-col lg:flex-row items-center justify-between bg-gradient-to-b from-[#090A1C] to-[#05330E] px-6 py-12 lg:px-36 lg:py-30 gap-8">
       
       {/* Mobile Heading */}
       <h2 className="text-[8vw] text-center font-semibold leading-snug lg:hidden">

@@ -19,7 +19,7 @@ const HowItWorksSection = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <section className="bg-[#011C07] max-w-[100vw] flex flex-col lg:flex-row-reverse items-center justify-evenly relative gap-20 py-12 lg:py-36 h-fit">
+    <section id="howitworks" className="bg-[#011C07] max-w-[100vw] flex flex-col lg:flex-row-reverse items-center justify-evenly relative gap-20 py-12 lg:py-36 h-fit">
       {/* Mobile Heading */}
       <h2 className="text-[9vw] font-semibold text-center lg:hidden">
         How It Works?

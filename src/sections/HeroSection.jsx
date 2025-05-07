@@ -33,10 +33,10 @@ const HeroSection = () => {
           </p>
 
           {/* Get Started, How it works - Desktop only */}
-          <div className="hidden lg:flex flex-row items-center gap-10 ml-30">
-            <button className="px-4 lg:text-lg py-2 font-light primary ">
+          <div className="hidden lg:flex flex-row items-center gap-10 ml-30 z-10">
+            <a href="#howitworks" className="px-4 lg:text-lg py-2 font-light primary cursor-pointer">
               Get Started
-            </button>
+            </a>
             <div className="flex items-center gap-3">
               <img src="/play.png" alt="" className="w-[10vw] lg:w-[3vw]" />
               <div className="flex items-center">
