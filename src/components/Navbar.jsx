@@ -16,7 +16,10 @@ const Navbar = () => {
         <a href="#about" className="hover:text-[#5A6CDE] hover:cursor-pointer">
           About
         </a>
-        <a href="mailto:support@stoxbazzar.com" className="hover:text-[#5A6CDE] hover:cursor-pointer">
+        <a
+          href="mailto:support@stoxbazzar.com"
+          className="hover:text-[#5A6CDE] hover:cursor-pointer"
+        >
           Contact
         </a>
         <a href="#faq" className="hover:text-[#5A6CDE] hover:cursor-pointer">
@@ -38,36 +41,56 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div
-        className={`z-50 fixed top-0 right-0 h-full w-[70%] shadow-lg backdrop-blur-xl overflow-hidden 
+
+      {menuOpen && (
+        <div
+          className="fixed inset-0 z-50 bg-black/50 lg:hidden"
+          onClick={toggleMenu}
+        >
+          <div
+            className={`z-50 fixed top-0 right-0 h-full w-[70%] shadow-lg backdrop-blur-xl overflow-hidden 
           bg-gradient-to-br from-black/25 to-black/0 text-white p-6 transition-all duration-500 ease-in-out transform ${
             menuOpen
               ? "translate-x-0 opacity-100"
               : "translate-x-full opacity-0"
           } lg:hidden`}
-      >
-        {/* Close Button inside menu */}
-        <div className="flex justify-end">
-          <X size={28} onClick={toggleMenu} />
+          >
+            {/* Close Button inside menu */}
+            <div className="flex justify-end">
+              <X size={28} onClick={toggleMenu} />
+            </div>
+            <ul className="flex flex-col gap-6 mt-20 font-light text-xl">
+              <li className="border-b pb-2">
+                <a
+                  href="#about"
+                  className="hover:text-[#5A6CDE]"
+                  onClick={toggleMenu}
+                >
+                  About
+                </a>
+              </li>
+              <li className="border-b pb-2">
+                <a
+                  href="mailto:support@stoxbazzar.com"
+                  className="hover:text-[#5A6CDE]"
+                  onClick={toggleMenu}
+                >
+                  Contact
+                </a>
+              </li>
+              <li className="border-b pb-2">
+                <a
+                  href="#faq"
+                  className="hover:text-[#5A6CDE]"
+                  onClick={toggleMenu}
+                >
+                  FAQ
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul className="flex flex-col gap-6 mt-20 font-light text-xl">
-          <li className="border-b pb-2">
-            <a href="#about" className="hover:text-[#5A6CDE]" onClick={toggleMenu}>
-              About
-            </a>
-          </li>
-          <li className="border-b pb-2">
-            <a href="mailto:support@stoxbazzar.com" className="hover:text-[#5A6CDE]" onClick={toggleMenu}>
-              Contact
-            </a>
-          </li>
-          <li className="border-b pb-2">
-            <a href="#faq" className="hover:text-[#5A6CDE]" onClick={toggleMenu}>
-              FAQ
-            </a>
-          </li>
-        </ul>
-      </div>
+      )}
     </nav>
   );
 };
