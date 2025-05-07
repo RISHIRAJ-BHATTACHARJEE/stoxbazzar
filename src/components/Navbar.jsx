@@ -16,7 +16,7 @@ const Navbar = () => {
         <a href="#about" className="hover:text-[#5A6CDE] hover:cursor-pointer">
           About
         </a>
-        <a href="#" className="hover:text-[#5A6CDE] hover:cursor-pointer">
+        <a href="mailto:support@stoxbazzar.com" className="hover:text-[#5A6CDE] hover:cursor-pointer">
           Contact
         </a>
         <a href="#faq" className="hover:text-[#5A6CDE] hover:cursor-pointer">
@@ -57,7 +57,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className="border-b pb-2">
-            <a href="#" className="hover:text-[#5A6CDE]" onClick={toggleMenu}>
+            <a href="mailto:support@stoxbazzar.com" className="hover:text-[#5A6CDE]" onClick={toggleMenu}>
               Contact
             </a>
           </li>
