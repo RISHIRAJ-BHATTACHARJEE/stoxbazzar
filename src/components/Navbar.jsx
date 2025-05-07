@@ -40,7 +40,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         className={`z-50 fixed top-0 right-0 h-full w-[70%] shadow-lg backdrop-blur-xl overflow-hidden 
-          bg-gradient-to-br from-black/25 to-black/0 text-white p-6 transition-all duration-500 ease-in-out transform ${
+          bg-gradient-to-br from-black/25 to-black/0 text-white p-6  duration-500 ease-in-out transform transition-all ${
             menuOpen
               ? "translate-x-0 opacity-100"
               : "translate-x-full opacity-0"
