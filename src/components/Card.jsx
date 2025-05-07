@@ -4,6 +4,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 const Card = () => {
   return (
     <div className="w-[75vw] max-w-[300px] border-2 text-black bg-white px-5 py-6 rounded-xl flex flex-col gap-6 shrink-0 my-6 lg:my-8">
+      {/* Quotation mark */}
+      <img src="/quote.svg" className="text-center m-auto w-12"/>
       <p className="text-sm font-semibold break-words overflow-y-auto">
         Lorem ipsum dolor sit amet consectetur. Magna a pretium sociis dictum
         neque vitae. Scelerisque fames tellus aliquet lectus nunc sed semper

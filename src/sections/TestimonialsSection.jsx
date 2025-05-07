@@ -64,7 +64,7 @@ const TestimonialsSection = () => {
             key={i}
             className={`shrink-0 snap-center flex justify-center transition-transform duration-500 ease-in-out
               w-full lg:w-1/3
-              ${i === currentIndex + Math.floor(cardsPerView / 2) ? "scale-105" : "scale-90"}
+              ${i === currentIndex + Math.floor(cardsPerView / 2) ? "scale-105 " : "scale-90"}
             `}
           >
             <Card />
