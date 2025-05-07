@@ -10,10 +10,10 @@ const faqHelpText = (
     If you have questions, we have answers for you here. In case we don't, feel
     free to reach us at{" "}
     <a
-      href="mailto:support@stoxbazzar.com"
+      href="mailto:support@StoxBazaar.com"
       className="text-blue-600 underline hover:text-blue-800"
     >
-      support@stoxbazzar.com
+      support@StoxBazaar.com
     </a>
     .
   </p>

@@ -13,10 +13,10 @@ const Footer = () => {
         </h2>
 
         <div className="flex items-center justify-start gap-5">
-          <a href="https://www.youtube.com/@Stoxbazzar">
+          <a href="https://www.youtube.com/@StoxBazaar">
             <Youtube />
           </a>
-          <a href="https://www.instagram.com/StoxBazzar/">
+          <a href="https://www.instagram.com/StoxBazaar/">
             <img src="/instagram.png" alt="" />
           </a>
           <a href="https://t.me/stoxbazaar">
@@ -37,10 +37,10 @@ const Footer = () => {
 
       <div className="hidden lg:flex items-start justify-between h-full bg-black px-24 py-14 border-b border-b-blue-500">
         <div className="flex items-center justify-start gap-5">
-          <a href="https://www.youtube.com/@Stoxbazzar">
+          <a href="https://www.youtube.com/@StoxBazaar">
             <Youtube />
           </a>
-          <a href="https://www.instagram.com/StoxBazzar/">
+          <a href="https://www.instagram.com/StoxBazaar/">
             <Instagram />
           </a>
           <a href="https://t.me/stoxbazaar">

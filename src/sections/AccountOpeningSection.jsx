@@ -21,7 +21,7 @@ const AccountOpeningSection = () => {
         </h2>
 
         <p className="max-w-3xl text-sm sm:text-base lg:text-[1.3vw] lg:max-w-4xl font-light">
-          Open a live account with StoxBazzar to access real-time market data,
+          Open a live account with StoxBazaar to access real-time market data,
           powerful trading tools, and seamless order execution. All with a fast,
           secure, and smooth onboarding experience.
         </p>

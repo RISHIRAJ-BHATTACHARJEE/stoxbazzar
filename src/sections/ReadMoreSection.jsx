@@ -52,7 +52,7 @@ const ReadMoreSection = () => {
       {/* Web Start Paragraph */}
       <p className="hidden lg:block absolute top-20 font-light w-[50%] text-[1.5vw] leading-10 xl:leading-10 tracking-wide pl-20">
         From <span className="font-semibold text-indigo-500">cutting-edge tools</span> to real-time insights and a seamless trading
-        experience — discover why thousands choose StoxBazzar for smart
+        experience — discover why thousands choose StoxBazaar for smart
         investing.
       </p>
       {/* Mobile Main Content - on top */}
@@ -60,7 +60,7 @@ const ReadMoreSection = () => {
         {/* <h2 className="text-xl text-white lg:hidden">Read More</h2> */}
         <p className="text-[4vw] text-start mt-6 text-gray-300 relative z-10 lg:hidden">
         From <span className="font-semibold text-indigo-500">cutting-edge tools</span> to real-time insights and a seamless trading
-        experience — discover why thousands choose StoxBazzar for smart
+        experience — discover why thousands choose StoxBazaar for smart
         investing.
         </p>
 

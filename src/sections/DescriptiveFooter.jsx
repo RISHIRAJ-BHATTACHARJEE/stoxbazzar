@@ -6,7 +6,7 @@ const DescriptiveFooter = () => {
       <h2 className="text-sm">
         <span className="text-white text-base font-medium">Risk statement:</span> An investment in derivatives may mean investors may lose
         an amount even greater than their original investment. Anyone wishing to
-        invest in any of the products mentioned in StoxBazzar.com should seek
+        invest in any of the products mentioned in StoxBazaar.com should seek
         their own financial or professional advice. Trading of securities,
         forex, stock market, commodities, options and futures may not be
         suitable for everyone and involves the risk of losing part or all of
@@ -21,13 +21,13 @@ const DescriptiveFooter = () => {
         You are strongly advised to obtain independent financial, legal and tax advice
         before proceeding with any currency or spot metals trade. Nothing in
         this site should be read or construed as constituting advice on the part
-        of StoxBazzar Limited or any of its affiliates, directors, officers or
+        of StoxBazaar Limited or any of its affiliates, directors, officers or
         employees. 
         <br />
         <br />
-        <span className="text-white text-base font-medium">Restricted Regions:</span> StoxBazzar Limited does not provide
+        <span className="text-white text-base font-medium">Restricted Regions:</span> StoxBazaar Limited does not provide
         services for citizens/residents of the United States, Cuba, Iraq,
-        Myanmar, North Korea, Sudan. The services of StoxBazzar Limited are not
+        Myanmar, North Korea, Sudan. The services of StoxBazaar Limited are not
         intended for distribution to, or use by, any person in any country or
         jurisdiction where such distribution or use would be contrary to local
         law or regulation.
