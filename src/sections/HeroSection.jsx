@@ -157,9 +157,9 @@ const HeroSection = () => {
 
       {/* Get Started and How it works - Mobile Only */}
       <div className="lg:hidden flex flex-col lg:flex-row items-center lg:items-center gap-6 pt-20">
-        <button className="px-4 lg:text-lg py-2 font-light primary ">
+        <a href="#howitworks" className="px-4 lg:text-lg py-2 font-light primary ">
           Get Started
-        </button>
+        </a>
         <div className="flex items-center gap-3">
           <img src="/play.png" alt="" className="w-[10vw] lg:w-[3vw]" />
           <div className="flex items-center">
