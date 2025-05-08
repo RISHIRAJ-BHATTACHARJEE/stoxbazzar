@@ -47,7 +47,7 @@ const FaqSection = () => {
           {faqData.map(({ id, question, answer }) => (
             <AccordionItem key={id} value={id}>
               <AccordionTrigger>{question}</AccordionTrigger>
-              <AccordionContent className="pl-4 pt-2 text-[1.2vw]">
+              <AccordionContent className="pl-4 pt-2 lg:text-[1.2vw]">
                 {answer}
               </AccordionContent>
             </AccordionItem>
