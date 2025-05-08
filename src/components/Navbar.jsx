@@ -29,7 +29,9 @@ const Navbar = () => {
       {/* Right Section (Login + Signup + Menu Icon) */}
       <div className="flex items-center gap-3 lg:gap-5">
         <a href={loginLink} className="font-light cursor-pointer">Login</a>
-        <button onClick={window.location.href = loginLink} className="font-light px-3 py-1 primary">Signup</button>
+        <a href={loginLink}>
+          <button className="font-light px-3 py-1 primary">Signup</button>
+        </a>
         <div className="lg:hidden z-50" onClick={toggleMenu}>
           {menuOpen ? (
             <X className="text-white" />
