@@ -1,77 +1,77 @@
+import React, { useState, useCallback } from "react";
 import { Menu, X } from "lucide-react";
-import React, { useState } from "react";
 
 const loginLink = "https://www.google.com";
+const emailId = "support@stoxbazzar.com";
+
+const navLinks = [
+  { label: "About", href: "#about" },
+  { label: "Contact", href: `mailto:${emailId}` },
+  { label: "FAQ", href: "#faq" },
+];
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const toggleMenu = useCallback(() => setMenuOpen((prev) => !prev), []);
 
   return (
     <nav className="sticky top-0 z-50 bg-black lg:bg-[linear-gradient(110deg,_#000000_50%,_#05330E_100%)] flex items-center justify-between px-3 py-5 lg:px-36">
-      <img src="/logo.png" alt="" className="w-[40vw] lg:w-[14vw]" />
-      {/* Desktop Nav Links */}
-      <div className="hidden lg:flex items-center gap-18 text-white font-light">
-        <a href="#about" className="hover:text-[#5A6CDE] hover:cursor-pointer">
-          About
-        </a>
-        <a href="mailto:support@stoxbazzar.com" className="hover:text-[#5A6CDE] hover:cursor-pointer">
-          Contact
-        </a>
-        <a href="#faq" className="hover:text-[#5A6CDE] hover:cursor-pointer">
-          FAQ
-        </a>
-      </div>
+      {/* Logo */}
+      <img src="/logo.png" alt="StoxBazzar Logo" className="w-[40vw] lg:w-[14vw]" />
 
-      {/* Right Section (Login + Signup + Menu Icon) */}
+      {/* Desktop Navigation */}
+      <ul className="hidden lg:flex items-center gap-14 text-white font-light">
+        {navLinks.map((link) => (
+          <li key={link.label}>
+            <a href={link.href} className="hover:text-[#5A6CDE] transition-colors duration-200">
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      {/* Right Section */}
       <div className="flex items-center gap-3 lg:gap-5">
-        <a href={loginLink} className="font-light cursor-pointer">Login</a>
+        <a href={loginLink} className="font-light text-white hover:opacity-80 transition">Login</a>
         <a href={loginLink}>
-          <button className="font-light px-3 py-1 primary">Signup</button>
+          <button className="font-light px-3 py-1 primary rounded hover:opacity-90 transition">
+            Signup
+          </button>
         </a>
-        <div className="lg:hidden z-50" onClick={toggleMenu}>
-          {menuOpen ? (
-            <X className="text-white" />
-          ) : (
-            <Menu className="text-white" />
-          )}
-        </div>
+        <button
+          onClick={toggleMenu}
+          aria-label="Toggle Menu"
+          className="lg:hidden text-white z-50"
+        >
+          {menuOpen ? <X /> : <Menu />}
+        </button>
       </div>
 
       {/* Mobile Menu */}
-      <div
-        className={`z-50 fixed top-0 right-0 h-full w-[70%] shadow-lg backdrop-blur-xl overflow-hidden 
-          bg-gradient-to-br from-black/25 to-black/0 text-white p-6  duration-500 ease-in-out transform transition-all ${
-            menuOpen
-              ? "translate-x-0 opacity-100"
-              : "translate-x-full opacity-0"
-          } lg:hidden`}
+      <aside
+        className={`fixed top-0 right-0 h-full w-[70%] bg-gradient-to-br from-black/80 to-black/50 text-white p-6 z-40
+        transform transition-transform duration-300 ease-in-out lg:hidden
+        ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
       >
-        {/* Close Button inside menu */}
         <div className="flex justify-end">
-          <X size={28} onClick={toggleMenu} />
+          <button onClick={toggleMenu} aria-label="Close Menu">
+            <X size={28} />
+          </button>
         </div>
         <ul className="flex flex-col gap-6 mt-20 font-light text-xl">
-          <li className="border-b pb-2">
-            <a href="#about" className="hover:text-[#5A6CDE]" onClick={toggleMenu}>
-              About
-            </a>
-          </li>
-          <li className="border-b pb-2">
-            <a href="mailto:support@stoxbazzar.com" className="hover:text-[#5A6CDE]" onClick={toggleMenu}>
-              Contact
-            </a>
-          </li>
-          <li className="border-b pb-2">
-            <a href="#faq" className="hover:text-[#5A6CDE]" onClick={toggleMenu}>
-              FAQ
-            </a>
-          </li>
+          {navLinks.map((link) => (
+            <li key={link.label} className="border-b pb-2">
+              <a
+                href={link.href}
+                className="hover:text-[#5A6CDE] transition-colors duration-200"
+                onClick={toggleMenu}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
         </ul>
-      </div>
+      </aside>
     </nav>
   );
 };
