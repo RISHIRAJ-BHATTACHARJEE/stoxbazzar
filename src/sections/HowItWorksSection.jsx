@@ -53,7 +53,7 @@ const HowItWorksSection = () => {
       </div>
 
       {/* Steps Text */}
-      <div className="flex flex-col items-start gap-5 font-semibold">
+      <div className="flex flex-col items-start gap-5 font-semibold lg:w-[30vw] xl:w-[30vw]">
         <h2 className="text-[2.5vw] font-semibold pb-10 hidden lg:block">
           How It Works?
         </h2>
@@ -64,7 +64,7 @@ const HowItWorksSection = () => {
             <p
               key={index}
               onClick={() => setActiveStep(index)}
-              className={`cursor-pointer lg:text-2xl lg:font-medium lg:my-1 flex items-center ${
+              className={`cursor-pointer lg:text-2xl lg:font-medium lg:my-3 flex items-center ${
                 isActive ? "text-white" : "text-white/70"
               }`}
             >
