@@ -23,7 +23,7 @@ const Navbar = () => {
       <ul className="hidden lg:flex items-center gap-14 text-white font-light">
         {navLinks.map((link) => (
           <li key={link.label}>
-            <a href={link.href} className="hover:text-[#5A6CDE] transition-colors duration-200">
+            <a href={link.href} rel="noopener noreferrer" className="hover:text-[#5A6CDE] transition-colors duration-200">
               {link.label}
             </a>
           </li>
