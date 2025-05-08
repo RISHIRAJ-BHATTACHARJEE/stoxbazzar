@@ -4,7 +4,7 @@ import { ChevronRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <div className="pb-20 lg:pt-8 lg:pb-0 lg:max-h-screen max-w-[100vw] bg-gradient-to-b from-[#0A0B1D] to-[#05330E] lg:bg-[linear-gradient(110deg,_#000000_50%,_#05330E_100%)]">
+    <div className="pb-20 lg:pt-8 lg:pb-10 lg:max-h-screen max-w-[100vw] bg-gradient-to-b from-[#0A0B1D] to-[#05330E] lg:bg-[linear-gradient(110deg,_#000000_50%,_#05330E_100%)]">
       <img
         src="/particles.png"
         alt=""
@@ -97,7 +97,7 @@ const HeroSection = () => {
           <img
             src="lg-bar-2.png"
             alt=""
-            className="hidden lg:block absolute bottom-0 left-0 w-[40vw] z-0"
+            className="hidden lg:block absolute -bottom-10 left-0 w-[40vw] z-0"
           />
 
           {/* Blue ellipse - top right overlapping bar-1 */}

@@ -34,7 +34,7 @@ const ReadMoreSection = () => {
   const current = data.find((item) => item.title === selected);
 
   return (
-    <div className="bg-[#171717] max-w-[100vw] flex flex-col justify-between gap-8 p-8 relative overflow-hidden lg:min-h-[90vh] lg:flex-row lg:items-center lg:px-16 lg:pt-12">
+    <div className="bg-[#171717] max-w-[100vw] flex flex-col justify-between gap-8 p-8 relative overflow-hidden lg:min-h-[90vh] lg:flex-row lg:items-center lg:px-16 lg:pt-12 ">
       {/* Desktop Rectangles - Fixed to top */}
       <div className="hidden lg:block absolute top-0 right-0 w-full h-full overflow-hidden z-0">
         <img
@@ -130,13 +130,13 @@ const ReadMoreSection = () => {
           {data.map((item) => (
             <div
               key={item.title}
-              className={`flex text-2xl gap-3 items-center cursor-pointer ${
+              className={`flex  text-2xl gap-3 items-center cursor-pointer ${
                 selected === item.title ? "text-white" : "text-gray-400"
               }`}
               onClick={() => setSelected(item.title)}
             >
-              <h2 className="text-md lg:pt-2">{item.title}</h2>
-              {selected === item.title && <ArrowRight size={32} />}
+              <h2 className="text-md lg:mt-8 ">{item.title}</h2>
+              {selected === item.title && <ArrowRight size={32} className="mt-8"/>}
             </div>
           ))}
         </div>

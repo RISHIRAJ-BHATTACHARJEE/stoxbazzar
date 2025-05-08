@@ -21,7 +21,7 @@ const faqHelpText = (
 
 const FaqSection = () => {
   return (
-    <section id="faq" className="text-black flex flex-col lg:flex-row items-center justify-between lg:justify-evenly p-8 gap-10 lg:h-[150vh] xl:h-[140vh] xl:-mt-[16vw]">
+    <section id="faq" className="text-black flex flex-col lg:flex-row items-center justify-between lg:justify-evenly p-8 gap-10">
       {/* Left Section: Header & Illustration */}
       <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6 lg:max-w-xl">
         <h2 className="font-semibold text-[9vw] lg:text-[3vw]">
@@ -41,13 +41,13 @@ const FaqSection = () => {
       {/* Right Section: FAQ Accordion */}
       <div className="w-full lg:w-[50%] px-1 py-2 flex flex-col gap-6">
         {/* Desktop-only help text above accordion */}
-        <div className="hidden lg:block lg:mt-[24vw] xl:mt-[18vw]">{faqHelpText}</div>
+        <div className="hidden lg:block lg:mt-[12vw] xl:mt-[6vw]">{faqHelpText}</div>
 
         <Accordion type="single" collapsible>
           {faqData.map(({ id, question, answer }) => (
             <AccordionItem key={id} value={id}>
               <AccordionTrigger>{question}</AccordionTrigger>
-              <AccordionContent className="pl-5 pt-2">
+              <AccordionContent className="pl-4 pt-2 text-[1.2vw]">
                 {answer}
               </AccordionContent>
             </AccordionItem>

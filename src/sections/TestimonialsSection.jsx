@@ -91,7 +91,7 @@ const TestimonialsSection = () => {
 
       <div
         ref={carouselRef}
-        className="flex gap-4 overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory lg:overflow-x-hidden"
+        className="flex overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory lg:overflow-x-hidden lg:mx-6"
       >
         {testimonials.map((item, idx) => (
           <div

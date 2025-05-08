@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 const steps = [
@@ -63,7 +64,7 @@ const HowItWorksSection = () => {
             <p
               key={index}
               onClick={() => setActiveStep(index)}
-              className={`cursor-pointer lg:text-2xl lg:font-medium lg:my-1 ${
+              className={`cursor-pointer lg:text-2xl lg:font-medium lg:my-1 flex items-center ${
                 isActive ? "text-white" : "text-white/70"
               }`}
             >
@@ -75,6 +76,7 @@ const HowItWorksSection = () => {
                 Step {index + 1}:
               </span>
               {step.text}
+              {isActive && <ArrowRight size={32} className="lg:ml-3 w-5"/>}
             </p>
           );
         })}
