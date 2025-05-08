@@ -21,7 +21,7 @@ const Card = ({ description, name, info, rating = 5 }) => {
               <MapPin size={16} strokeWidth={1} />
               <p className="text-xs">{info}</p>
             </div>
-            {/* ⭐ Dynamic Stars */}
+            
             <div className="flex gap-1 mt-2">
               {[...Array(5)].map((_, i) => (
                 <Star

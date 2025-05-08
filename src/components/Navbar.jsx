@@ -1,6 +1,8 @@
 import { Menu, X } from "lucide-react";
 import React, { useState } from "react";
 
+const loginLink = "https://www.google.com";
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -26,8 +28,8 @@ const Navbar = () => {
 
       {/* Right Section (Login + Signup + Menu Icon) */}
       <div className="flex items-center gap-3 lg:gap-5">
-        <h2 className="font-light">Login</h2>
-        <button className="font-light px-3 py-1 primary">Signup</button>
+        <a href={loginLink} className="font-light cursor-pointer">Login</a>
+        <button onClick={window.location.href = loginLink} className="font-light px-3 py-1 primary">Signup</button>
         <div className="lg:hidden z-50" onClick={toggleMenu}>
           {menuOpen ? (
             <X className="text-white" />
