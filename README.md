@@ -1,12 +1,65 @@
-# React + Vite
+# 🧠 StoxBazzar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**StoxBazzar** is a modern, responsive web application designed to provide users with insightful stock market information and tools. Built with React and Vite, it offers a seamless user experience with fast load times and intuitive navigation.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Experience the application live: [stoxbazzar.vercel.app](https://stoxbazzar.vercel.app)
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Responsive Design**: Optimized for desktops, tablets, and mobile devices.
+- **Interactive UI**: Smooth transitions and interactive elements enhance user engagement.
+- **Modular Components**: Clean and reusable components for scalability and maintainability.
+- **Fast Performance**: Leveraging Vite for rapid development and optimized builds.
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React, Vite
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Deployment**: Vercel
+
+## 📁 Project Structure
+```bash
+stoxbazzar/
+├── public/ # Static assets
+├── src/ # Source code
+│ ├── components/ # Reusable components
+│ ├── pages/ # Page components
+│ ├── App.jsx # Root component
+│ └── main.jsx # Entry point
+├── .gitignore
+├── index.html
+├── package.json
+├── README.md
+└── vite.config.js
+```
+
+## 📦 Installation
+
+- **Clone the repository:**
+
+```bash
+   git clone https://github.com/RISHIRAJ-BHATTACHARJEE/stoxbazzar.git
+```
+```bash
+   cd stoxbazzar
+```
+```bash
+   npm i
+```
+```bash
+   npm run dev 
+```
+
+##🧪 Scripts
+- **npm run dev:** Start the development server.
+
+- **npm run build:** Build the application for production.
+
+- **npm run preview:** Preview the production build locally.
+
+##📄 License
+
+**This project is licensed under the MIT License.**
