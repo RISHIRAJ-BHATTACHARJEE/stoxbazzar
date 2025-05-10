@@ -53,13 +53,13 @@ stoxbazzar/
    npm run dev 
 ```
 
-##🧪 Scripts
+## 🧪 Scripts
 - **npm run dev:** Start the development server.
 
 - **npm run build:** Build the application for production.
 
 - **npm run preview:** Preview the production build locally.
 
-##📄 License
+## 📄 License
 
 **This project is licensed under the MIT License.**
