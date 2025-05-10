@@ -17,7 +17,7 @@ function AccordionItem({
   return (
     (<AccordionPrimitive.Item
       data-slot="accordion-item"
-      className={cn("border-b last:border-b-0 bg-white", className)}
+      className={cn("bg-white", className)}
       {...props} />)
   );
 }
@@ -32,7 +32,7 @@ function AccordionTrigger({
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
-          "lg:text-[1.2vw] border-b border-black flex flex-1 items-start justify-between gap-4 rounded-md lg:rounded-none py-4 lg:px-0 lg:py-5 text-left text-sm font-medium transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-45",
+          "lg:text-[1.2vw] border-b border-black flex flex-1 items-start justify-between gap-4 rounded-md lg:rounded-none py-4 lg:px-0 lg:py-5 text-left text-sm font-medium transition-all outline-none disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-45",
           className
         )}
         {...props}>
