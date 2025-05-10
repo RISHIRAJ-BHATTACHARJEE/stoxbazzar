@@ -17,13 +17,21 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-black lg:bg-[linear-gradient(110deg,_#000000_50%,_#05330E_100%)] flex items-center justify-between px-3 py-5 lg:px-36">
       {/* Logo */}
-      <img src="/logo.png" alt="StoxBazzar Logo" className="w-[40vw] lg:w-[14vw]" />
+      <img
+        src="/logo.png"
+        alt="StoxBazzar Logo"
+        className="w-[40vw] lg:w-[14vw]"
+      />
 
       {/* Desktop Navigation */}
       <ul className="hidden lg:flex items-center gap-14 text-white font-light">
         {navLinks.map((link) => (
           <li key={link.label}>
-            <a href={link.href} rel="noopener noreferrer" className="hover:text-[#5A6CDE] transition-colors duration-200">
+            <a
+              href={link.href}
+              rel="noopener noreferrer"
+              className="hover:text-[#5A6CDE] transition-colors duration-200"
+            >
               {link.label}
             </a>
           </li>
@@ -32,20 +40,25 @@ const Navbar = () => {
 
       {/* Right Section */}
       <div className="flex items-center gap-3 lg:gap-5">
-        <a href={loginLink} className="font-light text-white hover:opacity-80 transition">Login</a>
+        <a
+          href={loginLink}
+          className="font-light text-white hover:opacity-80 transition"
+        >
+          Login
+        </a>
         <a href={loginLink}>
           <button className="font-light px-3 py-1 primary rounded hover:opacity-90 transition">
             Signup
           </button>
         </a>
-        <button
-          onClick={toggleMenu}
-          aria-label="Toggle Menu"
-          className="lg:hidden text-white z-10"
-        >
-          {menuOpen ? <X /> : <Menu />}
-        </button>
       </div>
+      <button
+        onClick={toggleMenu}
+        aria-label="Toggle Menu"
+        className="lg:hidden text-white z-10"
+      >
+        {menuOpen ? <X /> : <Menu />}
+      </button>
 
       {/* Mobile Menu */}
       <aside
