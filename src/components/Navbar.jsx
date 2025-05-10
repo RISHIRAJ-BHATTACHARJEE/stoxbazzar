@@ -41,7 +41,7 @@ const Navbar = () => {
         <button
           onClick={toggleMenu}
           aria-label="Toggle Menu"
-          className="lg:hidden text-white z-50"
+          className="lg:hidden text-white z-10"
         >
           {menuOpen ? <X /> : <Menu />}
         </button>
@@ -49,11 +49,11 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <aside
-        className={`fixed top-0 right-0 h-full w-[70%] bg-gradient-to-br from-black/80 to-black/50 text-white p-6 z-40
+        className={`fixed top-0 right-0 h-full w-[70%] backdrop-blur-lg bg-gradient-to-br from-black/80 to-black/50 text-white p-6 z-40
         transform transition-transform duration-300 ease-in-out lg:hidden
         ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
       >
-        <div className="flex justify-end">
+        <div className="flex justify-end z-20">
           <button onClick={toggleMenu} aria-label="Close Menu">
             <X size={28} />
           </button>

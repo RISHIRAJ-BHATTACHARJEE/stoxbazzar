@@ -1,6 +1,6 @@
 import * as React from "react"
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
-import { ChevronDownIcon, X } from "lucide-react"
+import { ChevronDownIcon, Plus, X } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 
@@ -17,7 +17,7 @@ function AccordionItem({
   return (
     (<AccordionPrimitive.Item
       data-slot="accordion-item"
-      className={cn("border-b last:border-b-0", className)}
+      className={cn("border-b last:border-b-0 bg-white", className)}
       {...props} />)
   );
 }
@@ -37,7 +37,7 @@ function AccordionTrigger({
         )}
         {...props}>
         {children}
-        <X
+        <Plus
           strokeWidth={2}
           className="text-black pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200" />
       </AccordionPrimitive.Trigger>
