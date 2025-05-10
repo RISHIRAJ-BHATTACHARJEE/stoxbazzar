@@ -1,4 +1,4 @@
-# ![StoxBazzar Logo](./public/bull-stox.png) Stoxbazaar
+# <img src="./public/bull-stox.png" width="150" alt="StoxBazzar Logo" /> Stoxbazaar
 
 **StoxBazzar** is a modern, responsive web application designed to provide users with insightful stock market information and tools. Built with React and Vite, it offers a seamless user experience with fast load times and intuitive navigation.
 
