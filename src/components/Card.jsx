@@ -10,15 +10,10 @@ const Card = ({ description, name, info, rating = 5 }) => {
         {description}
       </p>
       <div className="flex items-center justify-between w-full">
-        <div className="flex items-center gap-3">
-          <Avatar>
-            <AvatarImage src="/avatar-3.png" />
-            <AvatarFallback>CN</AvatarFallback>
-          </Avatar>
-          <div>
+        <div className="flex items-center gap-3 w-full">
+          <div className="flex flex-col items-center justify-center w-full">
             <h2 className="font-semibold text-sm">{name}</h2>
             <div className="flex items-center gap-1 text-zinc-500">
-              <MapPin size={16} strokeWidth={1} />
               <p className="text-xs">{info}</p>
             </div>
             

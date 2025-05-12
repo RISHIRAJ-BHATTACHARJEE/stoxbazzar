@@ -1,41 +1,9 @@
 import { useRef, useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Card from "../components/Card";
+import { testimonials } from "@/constants";
 
 const TOTAL_CARDS = 5;
-
-const testimonials = [
-  {
-    name: "Rohan M.",
-    info: "Mumbai - Full-Time Trader",
-    description: "I've used multiple platforms, but this one truly stands out. Zero brokerage, lightning-fast withdrawals, and 24/7 support make it a dream for serious traders like me.",
-    rating: 2
-  },
-  {
-    name: "Priya S.",
-    info: "Bangalore - Part-Time Investor",
-    description: "I love how easy it is to deposit and withdraw anytime, even on Sundays. Plus, no hidden charges — just clean, honest trading.",
-    rating: 5
-  },
-  {
-    name: "Amit J.",
-    info: "Delhi - Crypto Enthusiast",
-    description: "High leverage and negative balance protection gave me the confidence to scale my trades. Even when the market was volatile, my account stayed safe.",
-    rating: 3
-  },
-  {
-    name: "Sneha R.",
-    info: "Hyderabad - New to Trading",
-    description: "As a beginner, I was worried about hidden fees and complicated apps. But this platform is super beginner-friendly with excellent customer support around the clock.",
-    rating: 4
-  },
-  {
-    name: "Manish T.",
-    info: "Ahmedabad - Professional Analyst",
-    description: "What impressed me the most is the ultra-fast withdrawal. I got funds in my bank account within minutes. That's rare in India.",
-    rating: 4
-  },
-]
 
 
 const TestimonialsSection = () => {
