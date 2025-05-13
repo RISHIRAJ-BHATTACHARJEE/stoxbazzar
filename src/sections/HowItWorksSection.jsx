@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const steps = [
   {
-    text: "Sign Up & Verify KYC.",
+    text: "Sign Up & Verify.",
     image: "/kyc-step1.png",
   },
   {
