@@ -13,7 +13,7 @@ import TestimonialsSection from "./sections/TestimonialsSection";
 
 function App() {
   return (
-    <div className="text-white inter-base">
+    <div className="text-white inter-base lg:bg-black">
       <Navbar />
       <HeroSection />
       <GetStartedSection />

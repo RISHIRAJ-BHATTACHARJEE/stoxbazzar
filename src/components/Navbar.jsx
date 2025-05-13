@@ -15,7 +15,7 @@ const Navbar = () => {
   const toggleMenu = useCallback(() => setMenuOpen((prev) => !prev), []);
 
   return (
-    <nav className="sticky top-0 z-50 bg-black lg:bg-[linear-gradient(110deg,_#000000_50%,_#05330E_100%)] flex items-center justify-between px-3 py-5 lg:px-36">
+    <nav className="sticky top-0 z-50 bg-black lg:bg-black/40 lg:backdrop-blur-md flex items-center justify-between px-3 py-5 lg:px-36">
       {/* Logo */}
       <img
         src="/logo.png"
@@ -26,13 +26,14 @@ const Navbar = () => {
       {/* Desktop Navigation */}
       <ul className="hidden lg:flex items-center gap-14 text-white font-light">
         {navLinks.map((link) => (
-          <li key={link.label}>
+          <li key={link.label} className="relative group">
             <a
               href={link.href}
               rel="noopener noreferrer"
-              className="hover:text-[#5A6CDE] transition-colors duration-200"
+              className="transition-colors duration-200 group-hover:text-[#5A6CDE] pb-1"
             >
               {link.label}
+              <span className="absolute -bottom-2 left-0 h-[2px] w-0 bg-[#5A6CDE] transition-all duration-300 group-hover:w-full"></span>
             </a>
           </li>
         ))}
@@ -57,7 +58,7 @@ const Navbar = () => {
         aria-label="Toggle Menu"
         className="lg:hidden text-white z-10"
       >
-        {menuOpen ? <X size={28}/> : <Menu size={28}/>}
+        {menuOpen ? <X size={28} /> : <Menu size={28} />}
       </button>
 
       {/* Mobile Menu */}
