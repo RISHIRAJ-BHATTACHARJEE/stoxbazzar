@@ -77,7 +77,7 @@ const Navbar = () => {
         aria-label="Toggle Menu"
         className="lg:hidden z-10 bg-black"
       >
-        {menuOpen ? <X className="backdrop-blur-lg bg-gradient-to-br from-black/80 to-black/50"/> : <Menu className="bg-black"/>}
+        {menuOpen ? <X className="bg-black"/> : <Menu className="bg-black"/>}
       </button>
 
       {/* Mobile Menu */}
