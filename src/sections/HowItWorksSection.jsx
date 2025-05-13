@@ -64,7 +64,7 @@ const HowItWorksSection = () => {
             <p
               key={index}
               onClick={() => setActiveStep(index)}
-              className={`cursor-pointer lg:text-2xl lg:font-medium lg:my-3 flex items-center ${
+              className={`cursor-pointer lg:text-2xl lg:font-medium lg:my-3 flex items-center whitespace-nowrap ${
                 isActive ? "text-white" : "text-white/70"
               }`}
             >
