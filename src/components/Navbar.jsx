@@ -77,7 +77,7 @@ const Navbar = () => {
         aria-label="Toggle Menu"
         className="lg:hidden z-10 bg-black"
       >
-        {menuOpen ? <X className="bg-black"/> : <Menu className="bg-black"/>}
+        {menuOpen ? <X /> : <Menu className="bg-black"/>}
       </button>
 
       {/* Mobile Menu */}
@@ -88,7 +88,7 @@ const Navbar = () => {
       >
         <div className="flex justify-end z-20 p-1">
           <button onClick={toggleMenu} aria-label="Close Menu">
-            <X size={28} />
+            <X size={28} className="bg-black"/>
           </button>
         </div>
         <ul className="flex flex-col gap-6 mt-20 font-light text-xl">
