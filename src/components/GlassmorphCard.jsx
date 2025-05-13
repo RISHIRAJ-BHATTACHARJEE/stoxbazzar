@@ -6,7 +6,7 @@ const GlassmorphCard = () => {
     <div
       className="relative rounded-3xl shadow-lg backdrop-blur-xl overflow-hidden 
     bg-gradient-to-br from-white/25 to-white/0 
-    px-2 lg:px-[1vw] lg:pt-[2vw] w-full lg:w-[22vw] xl:w-[19vw] mx-auto pb-4"
+    px-2 lg:px-[1vw] lg:pt-[2vw] w-full lg:w-[22vw] mx-auto pb-4"
     >
       {/* Header Section */}
       <div className="flex justify-between items-start py-[4vw] lg:py-0 px-2">
@@ -16,15 +16,14 @@ const GlassmorphCard = () => {
         <img
           src="/menu.png"
           alt="menu"
-          className="w-10 h-10 sm:w-7 sm:h-7 lg:w-11 lg:h-11
-"
+          className="w-10 h-10 sm:w-7 sm:h-7 lg:w-11 lg:h-11"
         />
       </div>
 
       {/* Main Content */}
       <div className="px-2">
         {/* Title */}
-        <div className="mt-3 xl:mt-7 flex items-center justify-between">
+        <div className="mt-3 xl:mt-3 flex items-center justify-between">
           <div>
             <h2 className="text-white text-xl lg:text-2xl font-bold">
               Financial
@@ -37,7 +36,7 @@ const GlassmorphCard = () => {
         </div>
 
         {/* Balance Section */}
-        <div className="mt-6 lg:mt-10 relative">
+        <div className="mt-6 lg:mt-7 relative">
           <div className="text-white text-lg lg:text-2xl ">
             ₹1,88,124.80{" "}
             <span className="text-green-500 text-xs">{"(+20%)"}</span>
@@ -46,7 +45,7 @@ const GlassmorphCard = () => {
         </div>
 
         {/* Indices Card */}
-        <div className="mt-8 lg:mt-8">
+        <div className="mt-8 lg:mt-6">
           <div
             className="w-full h-[100px] lg:h-[120px] xl:h-full  
                 bg-white/10 rounded-2xl p-2 lg:p-4 xl:py-5
