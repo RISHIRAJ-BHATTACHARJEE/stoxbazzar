@@ -69,7 +69,7 @@ const HowItWorksSection = () => {
               }`}
             >
               <span
-                className={`mr-2 ${
+                className={`mr-2 whitespace-nowrap ${
                   isActive ? "text-indigo-400" : "text-white/70"
                 }`}
               >
