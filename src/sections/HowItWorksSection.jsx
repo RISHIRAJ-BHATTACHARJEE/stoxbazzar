@@ -53,7 +53,7 @@ const HowItWorksSection = () => {
       </div>
 
       {/* Steps Text */}
-      <div className="flex flex-col items-start gap-5 font-semibold lg:w-[30vw] xl:w-[30vw]">
+      <div className="flex flex-col items-start gap-5 font-semibold lg:w-[32vw] xl:w-[34vw]">
         <h2 className="text-[2.5vw] font-semibold pb-10 hidden lg:block">
           How It Works?
         </h2>
