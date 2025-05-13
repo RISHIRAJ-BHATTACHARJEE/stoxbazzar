@@ -39,7 +39,7 @@ const Navbar = () => {
             {link.href.startsWith("#") ? (
               <button
                 onClick={(e) => handleScroll(e, link.href.substring(1))}
-                className="appearence-none bg-transparent border-none outline-none transition-colors duration-200 group-hover:text-[#5A6CDE] pb-1 cursor-pointer"
+                className="bg-transparent border-none outline-none transition-colors duration-200 group-hover:text-[#5A6CDE] pb-1 cursor-pointer"
               >
                 {link.label}
                 <span className="absolute -bottom-2 left-0 h-[2px] w-0 bg-[#5A6CDE] transition-all duration-300 group-hover:w-full"></span>
@@ -75,9 +75,9 @@ const Navbar = () => {
       <button
         onClick={toggleMenu}
         aria-label="Toggle Menu"
-        className="lg:hidden text-white z-10 bg-black"
+        className="lg:hidden z-10 bg-black"
       >
-        {menuOpen ? <X size={28} /> : <Menu size={28} />}
+        {menuOpen ? <X size={28} /> : <Menu />}
       </button>
 
       {/* Mobile Menu */}
