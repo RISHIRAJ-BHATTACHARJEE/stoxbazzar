@@ -14,6 +14,15 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = useCallback(() => setMenuOpen((prev) => !prev), []);
 
+  const handleScroll = useCallback((e, id) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+      setMenuOpen(false); // Close menu on mobile
+    }
+  }, []);
+
   return (
     <nav className="sticky top-0 z-50 bg-black lg:bg-black/40 lg:backdrop-blur-md flex items-center justify-between px-3 py-5 lg:px-36">
       {/* Logo */}
@@ -27,14 +36,24 @@ const Navbar = () => {
       <ul className="hidden lg:flex items-center gap-14 text-white font-light">
         {navLinks.map((link) => (
           <li key={link.label} className="relative group">
-            <a
-              href={link.href}
-              rel="noopener noreferrer"
-              className="transition-colors duration-200 group-hover:text-[#5A6CDE] pb-1"
-            >
-              {link.label}
-              <span className="absolute -bottom-2 left-0 h-[2px] w-0 bg-[#5A6CDE] transition-all duration-300 group-hover:w-full"></span>
-            </a>
+            {link.href.startsWith("#") ? (
+              <button
+                onClick={(e) => handleScroll(e, link.href.substring(1))}
+                className="transition-colors duration-200 group-hover:text-[#5A6CDE] pb-1 cursor-pointer"
+              >
+                {link.label}
+                <span className="absolute -bottom-2 left-0 h-[2px] w-0 bg-[#5A6CDE] transition-all duration-300 group-hover:w-full"></span>
+              </button>
+            ) : (
+              <a
+                href={link.href}
+                rel="noopener noreferrer"
+                className="transition-colors duration-200 group-hover:text-[#5A6CDE] pb-1"
+              >
+                {link.label}
+                <span className="absolute -bottom-2 left-0 h-[2px] w-0 bg-[#5A6CDE] transition-all duration-300 group-hover:w-full"></span>
+              </a>
+            )}
           </li>
         ))}
       </ul>
