@@ -75,7 +75,7 @@ const Navbar = () => {
       <button
         onClick={toggleMenu}
         aria-label="Toggle Menu"
-        className="lg:hidden text-white z-10 bg-transparent"
+        className="lg:hidden text-white z-10 bg-black"
       >
         {menuOpen ? <X size={28} /> : <Menu size={28} />}
       </button>
