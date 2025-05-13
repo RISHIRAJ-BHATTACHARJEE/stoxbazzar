@@ -93,10 +93,10 @@ const Navbar = () => {
         </div>
         <ul className="flex flex-col gap-6 mt-20 font-light text-xl">
           {navLinks.map((link) => (
-            <li key={link.label} className="border-b pb-2">
+            <li key={link.label} className="border-b pb-2 backdrop-blur-md bg-black/40">
               <a
                 href={link.href}
-                className="hover:text-[#5A6CDE] transition-colors duration-200"
+                className="hover:text-[#5A6CDE] transition-colors duration-200 backdrop-blur-md bg-black/40"
                 onClick={toggleMenu}
               >
                 {link.label}

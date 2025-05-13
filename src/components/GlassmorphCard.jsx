@@ -6,7 +6,7 @@ const GlassmorphCard = () => {
     <div
       className="relative rounded-3xl shadow-lg backdrop-blur-xl overflow-hidden 
     bg-gradient-to-br from-white/25 to-white/0 
-    px-2 lg:px-[1vw] lg:py-[2vw] w-full lg:w-[22vw] xl:w-[19vw] mx-auto min-h-[63vh] sm:min-h-[68vh] lg:h-[70vh]"
+    px-2 lg:px-[1vw] lg:pt-[2vw] w-full lg:w-[22vw] xl:w-[19vw] mx-auto pb-4 "
     >
       {/* Header Section */}
       <div className="flex justify-between items-start py-[4vw] lg:py-0 px-2">
