@@ -122,14 +122,14 @@ const HeroSection = () => {
           />
 
           {/* Glassmorphism Card */}
-          <div className="absolute z-20 left-1/2 lg:left-[23vw] top-[52%] translate-x-[-50%] translate-y-[-50%] w-[60vw] max-w-[400px] lg:max-w-[100vw] lg:h-full xl:max-w-[18vw]">
+          <div className="absolute my-8 z-20 left-1/2 lg:left-[23vw] top-[52%] translate-x-[-50%] translate-y-[-50%] w-[60vw] max-w-[400px] lg:max-w-[100vw] lg:h-full xl:max-w-[18vw]">
             <GlassmorphCard />
           </div>
         </div>
       </div>
 
       {/* Features - Mobile Only */}
-      <div className="lg:hidden grid grid-cols-2 gap-10 px-12 justify-evenly items-center">
+      <div className="lg:hidden grid grid-cols-2 gap-10 px-12 mt-14 justify-evenly items-center">
         {/* Feature-1 */}
         <div className="flex flex-col items-center justify-center">
           <img src="/candlestick.png" alt="" className="w-[12vw]" />
