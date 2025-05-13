@@ -6,7 +6,7 @@ const GlassmorphCard = () => {
     <div
       className="relative rounded-3xl shadow-lg backdrop-blur-xl overflow-hidden 
     bg-gradient-to-br from-white/25 to-white/0 
-    px-2 lg:px-[1vw] lg:pt-[2vw] w-full lg:w-[22vw] xl:w-[19vw] mx-auto pb-4 "
+    px-2 lg:px-[1vw] lg:pt-[2vw] w-full lg:w-[22vw] xl:w-[19vw] mx-auto pb-4"
     >
       {/* Header Section */}
       <div className="flex justify-between items-start py-[4vw] lg:py-0 px-2">
@@ -52,17 +52,21 @@ const GlassmorphCard = () => {
                 bg-white/10 rounded-2xl p-2 lg:p-4 xl:py-5
                 flex flex-col items-center justify-center relative gap-5"
           >
-            <div className=" flex flex-col">
+            <div className="flex flex-col">
               <h2 className="text-[10px]">
                 <span className="lg:text-[0.8vw]">NIFTY 50</span>
-                <span className="text-green-500 pl-10 lg:pl-20">+75.30 (0.31%)</span>
+                <span className="text-green-500 pl-10 lg:pl-20">
+                  +75.30 (0.31%)
+                </span>
               </h2>
               <h2 className="text-xs">24,532.45 </h2>
             </div>
             <div className="">
               <h2 className="text-[10px]">
                 <span className="lg:text-[0.8vw]">SENSEX</span>
-                <span className="text-red-500 pl-12 lg:pl-22">-75.30 (0.31%)</span>
+                <span className="text-red-500 pl-12 lg:pl-22">
+                  -75.30 (0.31%)
+                </span>
               </h2>
               <h2 className="text-xs">24,532.45 </h2>
             </div>
