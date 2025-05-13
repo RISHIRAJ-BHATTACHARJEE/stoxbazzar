@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <div className="h-full bg-black p-12 flex flex-col gap-7 border-b border-[#555BCE] lg:hidden">
+      <div className="h-full bg-black p-12 flex flex-col gap-7 border-b border-[#555bce] lg:hidden">
         <img src="/logo.png" alt="" className="w-[60%]" />
 
         <h2 className="text-zinc-500">

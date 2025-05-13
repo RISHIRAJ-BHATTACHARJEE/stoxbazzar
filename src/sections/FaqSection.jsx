@@ -21,7 +21,7 @@ const faqHelpText = (
 
 const FaqSection = () => {
   return (
-    <section id="faq" className="text-black flex flex-col lg:flex-row items-center justify-between lg:justify-evenly p-8 gap-10">
+    <section id="faq" className="text-black flex flex-col lg:flex-row items-center justify-between lg:justify-evenly p-8 gap-10 bg-white">
       {/* Left Section: Header & Illustration */}
       <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6 lg:max-w-xl">
         <h2 className="font-semibold text-[9vw] lg:text-[3vw]">
@@ -47,7 +47,7 @@ const FaqSection = () => {
           {faqData.map(({ id, question, answer }) => (
             <AccordionItem key={id} value={id}>
               <AccordionTrigger>{question}</AccordionTrigger>
-              <AccordionContent className="pl-4 pt-2 lg:text-[1.2vw]">
+              <AccordionContent className="pl-4 pt-2 lg:text-[1vw]">
                 {answer}
               </AccordionContent>
             </AccordionItem>
