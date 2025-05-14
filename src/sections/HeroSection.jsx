@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="flex flex-col lg:flex-row items-center justify-between gap-6 py-12">
         <div className="flex flex-col items-center lg:items-start gap-14">
           {/* Heading */}
-          <h2 className="text-center lg:text-start text-[8vw] lg:text-[4vw] lg:pl-30 leading-10 lg:leading-12 xl:leading-18 font-semibold">
+          <h2 className="text-center lg:text-start text-[8vw] lg:text-[4vw] lg:pl-30 leading-10 md:leading-16 lg:leading-12 xl:leading-18 font-semibold">
             Invest Smarter
             <br /> Trade Faster.
           </h2>

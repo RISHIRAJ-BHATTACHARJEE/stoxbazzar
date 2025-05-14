@@ -43,7 +43,7 @@ const GlobalUsersSection = () => {
     <section className="bg-[#151515] min-h-screen lg:min-h-[70vh] flex flex-col items-center justify-center gap-10 py-10 px-8">
       {/* Mobile Layout */}
       <div className="lg:hidden flex flex-col items-center justify-center gap-12 text-center">
-        <h2 className="text-[9vw] font-semibold leading-10">
+        <h2 className="text-[9vw] font-semibold leading-10 md:leading-20">
           Users From All Over The World
         </h2>
         <p className="text-sm text-zinc-500 px-6">

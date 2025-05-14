@@ -31,12 +31,12 @@ const Navbar = () => {
   }, [closeMenu]);
 
   return (
-    <nav className="sticky top-0 z-50 bg-black lg:bg-black/40 lg:backdrop-blur-md flex items-center justify-between px-3 py-5 lg:px-36">
+    <nav className="sticky top-0 z-50 bg-black lg:bg-black/40 lg:backdrop-blur-md flex items-center justify-between px-3 py-5 md:px-12 lg:px-36">
       {/* Logo */}
       <img
         src="/logo.png"
         alt="StoxBazzar Logo"
-        className="w-[40vw] lg:w-[14vw]"
+        className="w-[40vw] md:w-[28vw] lg:w-[14vw]"
         loading="lazy"
       />
 
@@ -70,7 +70,7 @@ const Navbar = () => {
       </ul>
 
       {/* Right Side Buttons */}
-      <div className="flex items-center gap-3 lg:gap-5">
+      <div className="flex items-center gap-3 md:ml-52 lg:gap-5">
         <a
           href={loginLink}
           className="font-light text-white hover:opacity-80 transition"
@@ -91,7 +91,7 @@ const Navbar = () => {
         aria-expanded={menuOpen}
         className="lg:hidden z-10 bg-black text-white"
       >
-        {menuOpen ? <X /> : <Menu />}
+        {menuOpen ? <X /> : <Menu className="md:size-8"/>}
       </button>
 
       {/* Mobile Nav */}
